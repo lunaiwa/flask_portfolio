@@ -15,7 +15,6 @@ class UserAPI:
         def post(self):
             ''' Read data for json body '''
             body = request.get_json()
-            
             ''' Avoid garbage in, error checking '''
             # validate name
             name = body.get('name')
